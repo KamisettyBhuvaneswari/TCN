@@ -1,0 +1,27 @@
+{
+    "timestamp": "2026-01-07T12:39:29.196458",
+    "model_type": "TCN + BiLSTM",
+    "test_metrics": {
+        "ssim": 0.24789492040872574,
+        "caption_accuracy": 0.18706140518188477
+    },
+    "ablation_studies": {
+        "bilstm_only": {
+            "ssim": 0.23672866374254226,
+            "caption_accuracy": 0.17258771806955336
+        },
+        "tcn_only": {
+            "ssim": 0.24751586169004441,
+            "caption_accuracy": 0.18530701845884323
+        }
+    },
+    "training_config": {
+        "max_epochs": 30,
+        "learning_rate": 0.0003,
+        "batch_size": 8
+    },
+    "model_params": {
+        "total_parameters": 249768651,
+        "trainable_parameters": 116778379
+    }
+}
