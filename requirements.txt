@@ -1,0 +1,37 @@
+# -------------------------------
+# PyTorch (CUDA 12.4)
+# -------------------------------
+torch
+torchvision
+torchaudio
+
+# -------------------------------
+# HuggingFace & NLP
+# -------------------------------
+transformers
+datasets
+nltk
+rouge-score
+
+# -------------------------------
+# Deep Learning Metrics & Vision
+# -------------------------------
+pytorch-msssim
+lpips
+pillow
+
+# -------------------------------
+# Experiment Tracking
+# -------------------------------
+wandb
+
+# -------------------------------
+# Data & Utilities
+# -------------------------------
+numpy
+pandas
+pyyaml
+matplotlib
+seaborn
+scikit-learn
+tqdm

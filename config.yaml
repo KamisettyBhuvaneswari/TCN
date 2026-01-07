@@ -1,0 +1,78 @@
+data:
+  dataset_name: StoryReasoning
+  sequence_length: 10
+  image_size: 224
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+  batch_size: 8
+  num_workers: 0
+  shuffle: true
+  pin_memory: false
+model:
+  visual_encoder:
+    type: resnet50
+    pretrained: true
+    freeze: true
+    feature_dim: 2048
+  text_encoder:
+    type: bert-base-uncased
+    pretrained: true
+    freeze: true
+    feature_dim: 768
+  tag_embedding:
+    vocab_size: 500
+    embed_dim: 128
+  tcn:
+    num_channels:
+    - 64
+    - 64
+    - 64
+    - 64
+    kernel_size: 8
+    dilation_rates:
+    - 1
+    - 2
+    - 4
+    - 8
+    dropout: 0.2
+  bilstm:
+    input_size: null
+    hidden_size: 256
+    num_layers: 2
+    dropout: 0.2
+  attention:
+    num_heads: 8
+    dropout: 0.1
+  text_decoder:
+    embed_dim: 256
+    hidden_dim: 512
+    vocab_size: 5000
+    max_length: 30
+training:
+  max_epochs: 30
+  learning_rate: 0.0003
+  optimizer: adam
+  weight_decay: 1.0e-05
+  lr_scheduler:
+    type: plateau
+    patience: 3
+    factor: 0.5
+    min_lr: 1.0e-06
+  early_stopping_patience: 5
+  gradient_clip_norm: 1.0
+  loss_weights:
+    image_loss: 0.5
+    text_loss: 0.5
+evaluation:
+  metrics:
+  - ssim
+  - lpips
+  - bleu
+  - rouge
+  - perplexity
+  compute_val_metrics: true
+paths:
+  checkpoint_dir: /teamspace/studios/this_studio/storytelling_projectcheckpoints
+  results_dir: /teamspace/studios/this_studio/storytelling_projectresults
+  data_dir: /teamspace/studios/this_studio/storytelling_project/data
