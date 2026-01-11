@@ -167,11 +167,10 @@ wandb==0.23.1
 3. **Clone and install**:
    ```python
    # Clone repository
-   !git clone[ <your-repo-url>](https://github.com/KamisettyBhuvaneswari/TCN.git)
-   %cd tcn-bilstm-storytelling
+   !git clone https://github.com/KamisettyBhuvaneswari/TCN.git
    
    # Install dependencies
-   !pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu124
+   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu124
    ```
 
 4. **Run the notebook**:
