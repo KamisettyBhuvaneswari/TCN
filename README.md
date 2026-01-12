@@ -2,6 +2,11 @@
 
 A deep learning pipeline for visual storytelling and scene reasoning that combines Temporal Convolutional Networks (TCN) and Bidirectional LSTM with cross-modal attention to generate coherent narratives from image sequences.
 
+## Quick Links
+- *[Experiments Notebook](experiment.ipynb)* – Full experimental workflow and implementation  
+- *[Evaluation Results](results/)* – All The results are in this folder 
+- *[Model Architecture](src/)* – Encoders, fusion, temporal modelling, and decoders.
+
 ## Project Overview
 
 This project implements a multimodal sequence model that learns rich representations from:
