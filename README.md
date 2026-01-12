@@ -85,8 +85,6 @@ The pipeline consists of the following components:
 
 **Data Augmentation**: Minor perturbations (±0.01 noise) applied to create temporal frame sequences.
 
-**Fallback Mechanism**: If downloads fail, synthetic images and token sequences are generated for pipeline validation.
-
 ---
 
 ## Environment Setup
