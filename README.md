@@ -131,7 +131,6 @@ wandb==0.23.1
 
 1. **Clone the repository**:
    ```bash
-   %cd TCN
    git clone https://github.com/KamisettyBhuvaneswari/TCN.git
    ```
 
@@ -170,6 +169,7 @@ wandb==0.23.1
    !git clone https://github.com/KamisettyBhuvaneswari/TCN.git
    
    # Install dependencies
+   %cd TCN
    pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu124
    ```
 
