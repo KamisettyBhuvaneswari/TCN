@@ -442,18 +442,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
----
-
-## Contact & Contributions
-
-For questions, issues, or contributions, please open an issue or submit a pull request on the GitHub repository.
-
-**Maintainer**: [Your Name]  
-**Email**: [Your Email]  
-**GitHub**: [Your GitHub Profile]
-
----
-
 ## Acknowledgments
 
 - **LLaVA Team** for the instruction-following dataset
