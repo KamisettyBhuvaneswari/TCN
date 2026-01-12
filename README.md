@@ -131,8 +131,8 @@ wandb==0.23.1
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
-   cd tcn-bilstm-storytelling
+   git clone https://github.com/KamisettyBhuvaneswari/TCN.git
+   cd TCN
    ```
 
 2. **Create virtual environment**:
